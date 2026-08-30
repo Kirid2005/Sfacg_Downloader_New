@@ -1,0 +1,15 @@
+# 本地配置（含账号/密码/cookie），不要提交
+config.conf
+cookie.txt
+
+# 下载缓存与产物
+cache/
+*.txt
+!requirements.txt
+*.epub
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
