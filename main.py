@@ -7,7 +7,8 @@ from config import init
 
 def main():
     client = ApiClient()
-    ensure_login(client)
+    if not ensure_login(client):
+        return
 
     novel_id = input("输入小说ID: ").strip()
     title, author, cover_url, volumes = get_novel_info(client, novel_id)
